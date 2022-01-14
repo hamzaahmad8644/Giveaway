@@ -1,0 +1,44 @@
+body {
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #ee7752, #20c997, #dc3545, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+  height: 100vh;
+  width: 98vw;
+}
+
+.main-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+article {
+  background: linear-gradient(to right, hsl(98 100% 62%), rgb(204, 206, 208));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.heading-container {
+  margin-bottom: 25px;
+}
+
+.heading-main {
+  font-family: "Dank Mono", ui-monospace, monospace;
+  font-size: 4vw;
+  text-align: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
